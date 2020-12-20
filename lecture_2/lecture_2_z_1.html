@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>Lecture 2-1</title>
+    <meta charset="utf-8">
+    <script src="scripts.js"></script>
+    <script>
+        testObj = {
+            name: 'Evgeniy',
+            firstname: 'Borzov',
+            birthday: new Date(1993, 1, 6),
+            parent: {
+                father: {
+                    name: 'Dmitriy',
+                    firstname: 'Borzov',
+                },
+                mother: {
+                    name: 'Natalia',
+                    firstname: 'Borzov',
+                }
+            },
+            printName: function() {
+                console.log(this.name + ' ' + this.firstname);
+            }
+        }
+        console.log("Копируемый объект:");
+        console.log(testObj);
+        let copyObj = deepCopy(testObj);
+        console.log("Копия объекта:");
+        console.log(copyObj);
+    </script>
+</head>
+
+<body>
+    <h2>Лекция 2 задача 1</h2>
+    <h3>Вывод в консоли</h3>
+</body>
+
+</html>
